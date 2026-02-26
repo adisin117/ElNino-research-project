@@ -4,5 +4,6 @@ import seaborn as sns
 import pandas as pd
 import sklearn
 
-dataframe = pd.read_csv("elnino.py")
-print(dataframe.head())
+dataframe = pd.read_csv("elnino.csv")
+dataframe.replace('.', np.nan, inplace=True)
+print(dataframe.count())
